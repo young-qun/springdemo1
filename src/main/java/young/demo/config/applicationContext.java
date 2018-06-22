@@ -13,13 +13,21 @@ import javax.servlet.ServletRegistration;
 public class applicationContext implements WebApplicationInitializer {
 
     public void onStartup(ServletContext servletContext) throws ServletException {
-        //Spring的配置 容器启动的监听器
+        //Spring的配置 容器启动的监听器 加载Spring的容器
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
         rootContext.register(ApplicationRootConfig.class);
 
         servletContext.addListener(new ContextLoaderListener(rootContext));
 
-        //Spring MVC的容器
+        //Spring MVC的容器  --加载SpringMVC的容器，父子容器的关系
+        /**
+         * 将SpringMVC的web.xml的配置转换成java配置
+         * <servlet>
+         *     <servlet-name></servlet-name>
+         *     <servlet-class></servlet-class>
+         *     <init-param></init-param>
+         * </servlet>
+         */
         AnnotationConfigWebApplicationContext dispatchContext = new AnnotationConfigWebApplicationContext();
         dispatchContext.register(ApplicationDispatchConfig.class);
 
