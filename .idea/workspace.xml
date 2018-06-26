@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8a0fe7c-79dd-4610-841c-9576c9dc7ba7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/young/demo/config/ApplicationDispatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/young/demo/config/ApplicationDispatchConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/young/demo/config/applicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/young/demo/config/applicationContext.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="securityConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/young/demo/config/securityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="265">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -500,7 +497,7 @@
       <workItem from="1529567914661" duration="7186000" />
       <workItem from="1529630750041" duration="16158000" />
       <workItem from="1529890018708" duration="1744000" />
-      <workItem from="1529980159790" duration="9448000" />
+      <workItem from="1529980159790" duration="10087000" />
     </task>
     <task id="LOCAL-00001" summary="spring Mvc 配置">
       <created>1529637026090</created>
@@ -509,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529637026090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring Security 配置">
+      <created>1530004227538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530004227538</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34536000" />
+    <option name="totallyTimeSpent" value="35175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -558,7 +562,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring Mvc 配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring Mvc 配置" />
+    <MESSAGE value="spring Security 配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring Security 配置" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/mvn/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class">
@@ -910,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/young/demo/config/securityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="265">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
