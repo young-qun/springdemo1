@@ -6,6 +6,7 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -34,5 +35,9 @@ public class applicationContext implements WebApplicationInitializer {
         ServletRegistration.Dynamic dispatch = servletContext.addServlet("dispatch", new DispatcherServlet(dispatchContext));
         dispatch.setLoadOnStartup(1);
         dispatch.addMapping("/");
+
+        //配置文件上传的视图解析器的内容
+        MultipartConfigElement multipartConfigElement = new MultipartConfigElement("tmp/data/uploads",1024000,4194304,0);
+        dispatch.setMultipartConfig(multipartConfigElement);
     }
 }
